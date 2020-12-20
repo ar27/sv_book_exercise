@@ -7,22 +7,31 @@ Tells you information about your current branch and revision.
 
 
 Unstage files:
-
+```git
 Git reset HEAD -- .
+```
 
 How to uncommit files and keep the changes:
+```git
 Git reset --soft HEAD^
+```
 
 How to add only tracked files:
+```git
 Git add -u
+```
 
 
 How to unstage a file: 
+```git
 git reset -- <filePath>
+```
 From <https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git> 
 ----------
 How to compare files from two different branches?
+```git
 git diff mybranch master -- myfile.cs
+```
 From <https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches> 
 ----------
 Git merge without auto commit
