@@ -1,4 +1,4 @@
-*How to force git to pull from the origin with no merge conflict
+* How to force git to pull from the origin with no merge conflict
 ```git
 git reset --hard origin/<branch_name>
 ```
