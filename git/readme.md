@@ -1,4 +1,6 @@
+```git
 git log -1
+```
 
 Tells you information about your current branch and revision. 
 
