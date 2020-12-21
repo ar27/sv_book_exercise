@@ -3,42 +3,35 @@
 git reset --hard origin/<branch_name>
 ```
 
-
+* Get the current branch name/ changeset and last commit date and time information.
 ```git
 git log -1
 ```
 
-Tells you information about your current branch and revision. 
-
-
-
-Unstage files:
+* How to unstage files:
 ```git
 Git reset HEAD -- .
 ```
 
-How to uncommit files and keep the changes:
+* How to uncommit files (without pushing) and keep the changes:
 ```git
 Git reset --soft HEAD^
 ```
 
-How to add only tracked files:
+* How to add only tracked files:
 ```git
 Git add -u
 ```
 
-
-How to unstage a file: 
+* How to unstage a file: [https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git](source) 
 ```git
 git reset -- <filePath>
 ```
-From <https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git> 
-----------
-How to compare files from two different branches?
+
+* How to compare files from two different branches [https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches](Source )
 ```git
 git diff mybranch master -- myfile.cs
 ```
-From <https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches> 
 ----------
 Git merge without auto commit
 git merge <branch> --no-commit
