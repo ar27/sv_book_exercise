@@ -23,34 +23,37 @@ Git reset --soft HEAD^
 Git add -u
 ```
 
-* How to unstage a file: [https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git](source) 
+* How to unstage a file: [Source](https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git) 
 ```git
 git reset -- <filePath>
 ```
 
-* How to compare files from two different branches [https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches](Source )
+* How to compare files from two different branches [Source](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
 ```git
 git diff mybranch master -- myfile.cs
 ```
 ----------
-Git merge without auto commit
+* Git merge without auto commit[Source](https://stackoverflow.com/questions/8640887/git-merge-without-auto-commit)
+```git
 git merge <branch> --no-commit
 
-Or: 
+//Or: 
 
 git merge <branch> --no-commit --no-ff
-FF: fast forward
-From <https://stackoverflow.com/questions/8640887/git-merge-without-auto-commit> 
+//FF: fast forward
+```
 -----------
-Undo a Git merge that hasn't been pushed yet
+* Undo a Git merge that hasn't been pushed yet [source]()
+```git 
 git reset --hard HEAD~1
+```
 From <https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet> 
 ----------------
-Git to omit deleted files.
+Git to omit deleted files.[source]()
 git diff --diff-filter=d
 From <https://stackoverflow.com/questions/3692152/suppressing-diffs-for-deleted-files-in-git> 
 ----------------
-Remove untracked files:
+Remove untracked files:[source]()
 //if you want to decide
 git clean -di
 //get rid of everything
@@ -59,13 +62,13 @@ From <https://www.hacksparrow.com/git/remove-untracked-files-and-directories.htm
 -----------------
 
 
-How to squash with respect to the master:
+How to squash with respect to the master:[source]()
 git rebase -i master
 From <https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch> 
 
 Then follow the instruction. 
 Change Pick to squash.
-And the change your comment to whatever you desire.
+And the change your comment to whatever you desire.[source]()
 
 git push --force origin my_branch
 From <https://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed> 
@@ -76,7 +79,7 @@ Use this option
 -X theirs
 
 ------------------------------------------------------
-Destroy your local changes (anything that's not pushed)
+Destroy your local changes (anything that's not pushed) [source]()
 
 	Ø git fetch
 	Ø git reset --hard origin/master
@@ -84,7 +87,7 @@ Destroy your local changes (anything that's not pushed)
 From <https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610> 
 
 ----------------------
-Amending commits:
+Amending commits: [source]()
 Amend changes the commit hash
 	Ø git add
 	Ø git commit --amend
