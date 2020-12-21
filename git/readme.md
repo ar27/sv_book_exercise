@@ -23,17 +23,17 @@ Git reset --soft HEAD^
 Git add -u
 ```
 
-* How to unstage a file: [Source](https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git) 
+* How to unstage a file [(source):](https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git) 
 ```git
 git reset -- <filePath>
 ```
 
-* How to compare files from two different branches [Source](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
+* How to compare files from two different branches [(source):](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
 ```git
 git diff mybranch master -- myfile.cs
 ```
 ----------
-* Git merge without auto commit[Source](https://stackoverflow.com/questions/8640887/git-merge-without-auto-commit)
+* Git merge without auto commit [(source):](https://stackoverflow.com/questions/8640887/git-merge-without-auto-commit)
 ```git
 git merge <branch> --no-commit
 
@@ -43,35 +43,37 @@ git merge <branch> --no-commit --no-ff
 //FF: fast forward
 ```
 -----------
-* Undo a Git merge that hasn't been pushed yet [source]()
+* Undo a Git merge that hasn't been pushed yet [(source):](https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet)
 ```git 
 git reset --hard HEAD~1
 ```
-From <https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet> 
-----------------
-Git to omit deleted files.[source]()
+
+* Git to omit deleted files [(source:)](https://stackoverflow.com/questions/3692152/suppressing-diffs-for-deleted-files-in-git)
+```git
 git diff --diff-filter=d
-From <https://stackoverflow.com/questions/3692152/suppressing-diffs-for-deleted-files-in-git> 
-----------------
-Remove untracked files:[source]()
+```
+
+* Remove untracked files [(source):](https://www.hacksparrow.com/git/remove-untracked-files-and-directories.html):
+```git
 //if you want to decide
 git clean -di
 //get rid of everything
 git clean -df
-From <https://www.hacksparrow.com/git/remove-untracked-files-and-directories.html> 
------------------
+```
 
-
-How to squash with respect to the master:[source]()
+* How to squash with respect to the master[(source):](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch)
+```git
 git rebase -i master
-From <https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch> 
+```
 
 Then follow the instruction. 
 Change Pick to squash.
-And the change your comment to whatever you desire.[source]()
+And the change your comment to whatever you desire.[source](https://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)
 
+```git
 git push --force origin my_branch
-From <https://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed> 
+```
+
 
 
 Git  merge conflict:
@@ -79,16 +81,14 @@ Use this option
 -X theirs
 
 ------------------------------------------------------
-Destroy your local changes (anything that's not pushed) [source]()
+Destroy your local changes (anything that's not pushed) [source:](https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610)
 
 	Ø git fetch
 	Ø git reset --hard origin/master
 
-From <https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610> 
 
-----------------------
-Amending commits: [source]()
-Amend changes the commit hash
+* Amending commits: 
+  Amend changes the commit hash
 	Ø git add
 	Ø git commit --amend
 
