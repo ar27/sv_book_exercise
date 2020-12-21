@@ -47,10 +47,7 @@ And the change your comment to whatever you desire.[source](https://stackoverflo
 ```-X theirs```
 
 
-* Destroy your local changes (anything that's not pushed) [source:](https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610)
-
-	Ø git fetch
-	Ø git reset --hard origin/master
+* Destroy your local changes (anything that's not pushed) [source:](https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610) ```git fetch``` followed by ```git reset --hard origin/master```
 
 
 * Amending commits: 
