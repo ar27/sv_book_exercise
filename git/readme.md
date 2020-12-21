@@ -18,14 +18,9 @@
 
 * How to compare files from two different branches [(source):](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
 ```git diff mybranch master -- myfile.cs```
-----------
+
 * Git merge without auto commit [(source):](https://stackoverflow.com/questions/8640887/git-merge-without-auto-commit)
-```git merge <branch> --no-commit```
-
-Or: 
-
-```git merge <branch> --no-commit --no-ff``` FF: fast forward
-
+```git merge <branch> --no-commit``` or  ```git merge <branch> --no-commit --no-ff``` FF: fast forward
 
 * Undo a Git merge that hasn't been pushed yet [(source):](https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet)
 ```git reset --hard HEAD~1```
@@ -42,12 +37,8 @@ git clean -df
 ```
 
 * How to squash with respect to the master[(source):](https://stackoverflow.com/questions/25356810/git-how-to-squash-all-commits-on-branch)
-```git rebase -i master```
-
-Then follow the instruction. 
-Change Pick to squash.
+```git rebase -i master```.Then follow the instruction. Change Pick to squash.
 And the change your comment to whatever you desire.[source](https://stackoverflow.com/questions/5667884/how-to-squash-commits-in-git-after-they-have-been-pushed)
-
 ```git push --force origin my_branch```
 
 
@@ -56,7 +47,7 @@ And the change your comment to whatever you desire.[source](https://stackoverflo
 ```-X theirs```
 
 
-Destroy your local changes (anything that's not pushed) [source:](https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610)
+* Destroy your local changes (anything that's not pushed) [source:](https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610)
 
 	Ø git fetch
 	Ø git reset --hard origin/master
@@ -68,7 +59,7 @@ Destroy your local changes (anything that's not pushed) [source:](https://stacko
 	- ```git commit --amend```
 
 
-*Force pushing is required to update branches already pushed to the server (but it hasn’t been merged into integration) you will need to force push rebases, squashes, and amended commits since the commit hashes have changed.
+* Force pushing is required to update branches already pushed to the server (but it hasn’t been merged into integration) you will need to force push rebases, squashes, and amended commits since the commit hashes have changed.
 
 	Ø git push -f
 
