@@ -76,11 +76,11 @@ git push --force origin my_branch
 
 
 
-Git  merge conflict:
-Use this option
--X theirs
+* Git  merge conflict: use
+```git
+-X theirs```
 
-------------------------------------------------------
+
 Destroy your local changes (anything that's not pushed) [source:](https://stackoverflow.com/questions/2452226/master-branch-and-origin-master-have-diverged-how-to-undiverge-branches/2452610)
 
 	Ø git fetch
@@ -92,13 +92,13 @@ Destroy your local changes (anything that's not pushed) [source:](https://stacko
 	Ø git add
 	Ø git commit --amend
 
------------------------------------------------
-Force pushing is required to update branches already pushed to the server (but it hasn’t been merged into integration) you will need to force push rebases, squashes, and amended commits since the commit hashes have changed.
+
+*Force pushing is required to update branches already pushed to the server (but it hasn’t been merged into integration) you will need to force push rebases, squashes, and amended commits since the commit hashes have changed.
 
 	Ø git push -f
--------------------
 
-Steps to Squashing a merged branch:
+
+* Steps to Squashing a merged branch:
 
 > git checkout feature/my-branch
 > git checkout feature/my-branch
@@ -109,8 +109,7 @@ Steps to Squashing a merged branch:
 
 
 
------------------------------
-Squashing 2 past commits together:
+* Squashing 2 past commits together:
 git rebase --interactive HEAD~2
 Follow the rest as if it was any other squash. 
--------------------
+
