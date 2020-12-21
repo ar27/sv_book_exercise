@@ -14,24 +14,18 @@
 ```git Git add -u```
 
 * How to unstage a file [(source):](https://stackoverflow.com/questions/6919121/why-are-there-two-ways-to-unstage-a-file-in-git) 
-```git
-git reset -- <filePath>
-```
+```git reset -- <filePath>```
 
 * How to compare files from two different branches [(source):](https://stackoverflow.com/questions/4099742/how-to-compare-files-from-two-different-branches)
-```git
-git diff mybranch master -- myfile.cs
-```
+```git diff mybranch master -- myfile.cs```
 ----------
 * Git merge without auto commit [(source):](https://stackoverflow.com/questions/8640887/git-merge-without-auto-commit)
-```git
-git merge <branch> --no-commit
+```git merge <branch> --no-commit```
 
-//Or: 
+Or: 
 
-git merge <branch> --no-commit --no-ff
-//FF: fast forward
-```
+```git merge <branch> --no-commit --no-ff``` FF: fast forward
+
 
 * Undo a Git merge that hasn't been pushed yet [(source):](https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet)
 ```git reset --hard HEAD~1```
